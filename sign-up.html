@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<style>
+
+		.container{
+			margin: 5% 32% 0% 32%;
+			width: 35%;
+			border: ridge 2px green;
+			padding: 2%;
+     
+		}
+		body{
+      background-image: url("images/sign in bg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 130vh;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>Create Your Account</h2>
+	<form>
+		<div class="form-group">
+    <label for="firstname">Business Name</label>
+    <input type="text" class="form-control" id="exampleInputfirstname" name="firstname" placeholder="Your Buisness Name" required style="border-radius: 10px;">
+    </div>
+  <div class="form-group">
+    <label for="lastname">Name</label>
+    <input type="text" class="form-control" id="exampleInputlastname" name="lastname" placeholder="Your Name" required style="border-radius: 10px;">
+  </div>
+  <div class="form-group">
+    <label for="phoneno">Phone Number</label>
+    <input type="text" class="form-control" id="exampleInputphoneno" name="phoneno" placeholder="Your Phone No." required style="border-radius: 10px;">
+  </div>
+  <div class="form-group">
+    <label for="Email1">Email Address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" style="border-radius: 10px;" placeholder="Your Email Address..." required>
+  </div>
+  <div class="form-group">
+    <label for="Password">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword" name="password" placeholder="Your Password" required style="border-radius: 10px;">
+  </div>
+  <div class="form-group col-md-4">
+    <label for="inputPackage">Package</label>
+    <select id="inputState" class="form-control" style="width: 285px; border-radius: 10px;">
+      <option selected>Basic</option>
+      <option>Standard</option>
+      <option>Business Plus</option>
+    </select>
+  </div>
+  <div class="form-group col-md-4">
+    <label for="inputPackage">Package Type</label>
+    <select id="inputState" class="form-control" style="width: 285px; border-radius: 10px;">
+      <option selected>Package Type</option>
+      <option>Monthly Package</option>
+      <option>Yearly Package</option>
+    </select>
+  </div>
+  <a href="sign-in.html" class="btn btn-dark btn-block" style="border-radius: 50px; line-height: 50px;" 
+  tabindex="-1" role="button" aria-disabled="true">CREATE ACCOUNT<i class="fas fa-long-arrow-alt-right" style="margin-left: 20px; margin-top: 10px;"></i></a>  
+</form>
+  </div>
+  
+</body>
+</html>

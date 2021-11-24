@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+/* -----------css reset--------------- */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ------------------------------------------- */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ------------------------------------------- */
+
+.containers{
+    height: 65vh;
+    background-image: url(images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    font-weight: bolder;
+    overflow: hidden;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 2rem;
+    margin: 5rem 0rem;
+}
+
+.title h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.title p {
+    width: 60%;
+    font-size: 1.3rem;
+    margin: 1.5rem 0rem 4rem;
+    color: #6c6c6c;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+}
+
+.button h3 {
+    font-size: 1.5rem;
+}
+
+#check {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    margin: 0rem 1rem;
+    appearance: none;
+    background: #03a9f4;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#check:checked {
+    background-color: #70e000;
+}
+
+#check:before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    background-color: #fff;
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#check:checked:before {
+    left: 30px;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+#month {
+    display: flex;
+    align-items: center;
+}
+
+#year {
+    display: none;
+    align-items: center;
+}
+
+.card {
+    border-radius: 15px;
+    margin: 0rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.card ul {
+    line-height: 2rem;
+    padding: 4rem 3rem 2rem;
+    font-size: 1.2rem;
+}
+
+.card ul li i {
+    margin-right: 1rem;
+}
+
+.right i {
+    color: #38b000;
+}
+
+.wrong i {
+    color: #fd0638;
+}
+
+.image {
+    width: 400px;
+    height: 300px;
+    background-image: url(images/card1.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 50% 50%;
+}
+
+.plan {
+    position: absolute;
+    top: 20px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    border-bottom: 3px solid #fd0638;
+}
+
+.image h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.image h4 span {
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.image a button {
+    outline: none;
+    border: 3px solid #03a9f4;
+    border-radius: 50px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #03a9f4;
+    transform: translateY(100px);
+}
+
+.image a button:hover {
+    color: #03a9f4;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+#card2 .image {
+    background-image: url(images/card2.jpg);
+}
+
+#card2 .image a button {
+    border: 3px solid #70e000;
+    background-color: #70e000;
+}
+
+#card2 .image a button:hover {
+    color: #70e000;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+#card2 ul {
+    padding: 5rem 3rem 4rem;
+}
+
+#card3 .image {
+    background-image: url(images/card3.jpg);
+}
+
+/* ---------------------------media query----------------------------- */
+
+@media(max-width:1380px) {
+    .card {
+        margin: 0rem;
+    }
+    #card2 {
+        margin: 0rem 1rem;
+    }
+}
+
+@media(max-width:1200px) {
+    .containers{
+        height: 50vh;
+    }
+    #month, #year {
+        flex-direction: column;
+    }
+    .card {
+        margin: 2rem 0rem;
+    }
+    .card ul, #card2 ul {
+        padding: 4rem 3rem;
+    }
+    .image {
+        width: 600px;
+        height: 500px;
+    }
+    .image a button {
+        transform: translateY(200px);
+    }
+    @media(max-width:768px) {
+        .image {
+            width: 500px;
+            height: 400px;
+        }
+        .image a button {
+            transform: translateY(150px);
+        }
+    }
+    @media(max-width:540px) {
+        .image {
+            width: 400px;
+            height: 300px;
+        }
+        .image a button {
+            transform: translateY(100px);
+        }
+        .title p {
+            width: 80%;
+        }
+        .image {
+            width: 300px;
+            height: 200px;
+        }
+        .image a button {
+            transform: translateY(70px);
+        }
+        .image h4 {
+            font-size: 1rem;
+            transform: translateY(20px);
+        }
+        .image h4 span {
+            font-size: 2.5rem;
+        }
+        .image a button {
+            font-size: 1rem;
+        }
+        .card ul, #card2 ul {
+            padding: 3rem 1rem;
+        }
+        .plan {
+            top: 15px;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Sign In Page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+    .bg{
+    background-image: url("images/sign in bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 130vh;
+    }
+    .form-container{
+    border: 2px solid green;
+    padding: 30px 40px;
+    margin-top: 10vh;
+    -webkit-box-shadow: 1px 2px 20px 5px rgba(0,0,0,0.35);
+    -moz-box-shadow: 1px 2px 20px 5px rgba(0,0,0,0.35);
+    box-shadow: 1px 2px 20px 5px rgba(0,0,0,0.35);
+    }
+    </style>
+  </head>
+  <body>
+      <div class="container-fluid bg">
+          <div class="row">
+              <div class="col-md-4 col-sm-4 col-xs-12"></div>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <form class="form-container">
+                    <h1 style="color: azure;">SIGN IN</h1>
+                    <div class="mb-3">
+                      <span class="icon"><i class="fas fa-user"></i></span>
+                      <label for="exampleInputEmail1" class="form-label">User name | Email address:</label>
+                      <input type="user|email" placeholder="User..." required style="border-radius: 50px;" 
+                      class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <span class="icon"><i class="fas fa-lock"></i></span>
+                      <label for="exampleInputPassword1" class="form-label">Password:</label>
+                      <input type="password" placeholder="Password" required class="form-control" id="exampleInputPassword1" 
+                      style="border-radius: 50px;">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                    </div>
+                    <a href="index.html" style="text-decoration: none; border-radius: 50px;" class="btn btn-success btn-block">Login</a>
+                    <h6 style="text-align: center; margin-top: 20px;">or</h6>
+                    <button type="Sign in with Google" class="btn btn-success btn-block" 
+                    style="margin-top: 20px; border-radius: 50px; background-color: azure; color: black;">
+                    <i class="fab fa-google"></i> Sign in with Google</button>
+                    <label for="createnewaccount" class="form-label" style="margin-top: 15px;"><a href="sign-up.html" style="color: azure;">Create an account</a></label>
+                    <label for="forgotpassword" class="form-label"><a href="#" style="color: azure;">Forgot password?</a></label>
+                  </form>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12"></div>
+          </div>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#home {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("images/img1.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    text-align: center;
+}
+
+#home h2 {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    margin: 0px;
+    line-height: 55px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    display: block;
+}
+
+#home p {
+    width: 60%;
+    color: white;
+    font-size: 1.7rem;
+}
+
+#home .btn {
+    margin-top: 30px;
+    box-sizing: border-box;
+    border-radius: 75px;
+}
+
+#home a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#home a.main-btn {
+    color: white;
+    background: #008BDC;
+    transition: 0.3s ease;
+}
+
+#home a.main-btn:hover {
+    color: azure;
+    background: #5f4c4c;
+}
+
+/*pricing */
+
+.pricing {
+    display: block;
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 30px;
+}
+
+.pricing h2{
+    
+        display: block;
+        font-size: 1.17em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    
+}
+
+.pricing .pricing-content {
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+    font-weight: bolder;
+}
+.pricing h6{display: block;
+font-size: 0.67em;
+margin-block-start: 2.33em;
+margin-block-end: 2.33em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+font-weight: bold;
+}
+
+.pricing .header-btn {
+    margin-top: 22px;
+}
+
+.main-btn {
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 2px solid transparent;
+    padding: 0 32px;
+    font-size: 16px;
+    line-height: 48px;
+    color: #0067f4;
+    position: relative;
+    transition: all 0.4s ease-out 0%;
+    z-index: 5;
+    text-decoration: none;
+}
+.main-btn:hover{
+    cursor: pointer;
+}
+.pricing .header-btn li {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+}
+
+.pricing .header-btn li a.main-btn {
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: #fff;
+    border: 0;
+    line-height: 50px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.pricing .header-btn li a.main-btn i {
+    margin-left: 5px;
+    color: #646ee5;
+}
+
+.pricing .header-btn .btn-one {
+    color: #fff;
+}
+
+.pricing .header-btn .btn-one::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #535cf1, #a147e4);
+    z-index: -1;
+    transition: all 0.3s ease;
+    background-position: right center;
+}
+
+.containers {
+    height: 100%;
+    margin: 5rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.month {
+    display: flex;
+    align-items: center;
+}
+
+.year {
+    display: none;
+    align-items: center;
+}
+
+.containers .card {
+    width: 300px;
+    height: fit-content;
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, #ee20d6 0%, #0a2fb6 100%);
+    border-radius: 15px;
+    box-shadow: 2px 5px 15px black;
+    transition: transform 0.3s;
+    margin: 0rem 3rem;
+}
+
+.containers .card:hover {
+    transform: scale(1.050);
+}
+
+.containers .card .card-title {
+    padding: 30px 20px;
+    border-bottom: 2px solid gray;
+}
+
+.containers .card .card-title h2 {
+    font-size: 35px;
+    padding-bottom: 15px;
+    color: yellow;
+}
+
+.containers .card .card-title p span {
+    font-size: 40px;
+    padding: 0 5px;
+}
+
+.containers .card .card-content ul {
+    padding: 10px 30px;
+    padding-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.containers .card .card-content ul li {
+    list-style: none;
+    padding: 10px 0;
+    font-size: small;
+    position: relative;
+    overflow: hidden;
+}
+
+.containers .card .card-content ul li i {
+    margin-right: 4px;
+}
+
+.containers .card .card-content button {
+    width: 120px;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.containers .card .card-content button:hover {
+    background: #17ead9;
+    /* letter-spacing: 1.2px; */
+}
+
+.containers .card .card-content button a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+@media(max-width:1200px) {
+    .containers .card {
+        width: 300px;
+        margin: 0rem 1rem
+    }
+}
+
+@media(max-width:1000px) {
+    .month, .year {
+        flex-direction: column;
+    }
+    .containers .card {
+        width: 400px;
+        margin: 1rem 0rem;
+    }
+}
+@media(max-width:860px){
+    #home h2 {
+        font-size: 2.5rem;
+    }
+    #home p {
+        width: 80%;
+        font-size: 1.3rem;
+    }
+}
+@media(max-width:600px) {
+    #home h2 {
+        font-size: 2.3rem;
+    }
+    #home p {
+        width: 80%;
+        font-size: 1.2rem;
+    }
+    .containers .card {
+        width: 300px;
+    }
+    .pricing h6 {
+        font-size: 1rem;
+    }
+    .main-btn {
+        padding: 0rem 1rem;
+    }
+}
+
+@media(max-width:376px) {
+    #home h2 {
+        font-size: 2rem;
+    }
+    #home p {
+        font-size: 1rem;
+    }
+    .pricing h6 {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:300px) {
+    .containers .card {
+        width: 250px;
+    }
+    #home a {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+    }
+    #home h2 {
+        font-size: 1.7rem;
+    }
+}
+
+@media(max-width:260px) {
+    #home a {
+        font-size: 0.8rem;
+        padding: 0.3rem;
+    }
+    #home h2 {
+        font-size: 1.3rem;
+    }
+    #home p {
+        font-size: 0.8rem;
+    }
+    .containers .card{
+        width: 125x;
+    }
+}
